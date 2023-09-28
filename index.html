@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button{
+            width: 100px;
+        }
+    </style>
+   <script src="js.js" defer></script>
+</head>
+<body>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input autocomplete="off" type="text" id="nome" placeholder="Digite seu nome">
+
+        <label>Deixe uma nota para o site:</label>
+        <select form="#avalicao" id="classificacao">
+            <option value="RUIM">Ruim</option>
+            <option value="DAPARAMELHORAR">Dá para melhorar</option>
+            <option value="BOM">Bom</option>
+            <option value="EXCELENTE">Excelente</option>
+        </select>
+
+        <label for="comentario">Deixe seu comentário (Opcional):</label>
+        <textarea id="comentario" placeholder="Digite aqui"></textarea>
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>
